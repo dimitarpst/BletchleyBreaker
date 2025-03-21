@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BletchleyBreaker.Web", "WebApplication3\BletchleyBreaker.Web.csproj", "{63CE9D66-75CB-4AA0-82F3-B39F563AE773}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BletchleyBreaker.Web", "BletchleyBreaker.Web\BletchleyBreaker.Web.csproj", "{08D259E2-6E6D-416A-BD29-D1C761C4F504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{63CE9D66-75CB-4AA0-82F3-B39F563AE773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63CE9D66-75CB-4AA0-82F3-B39F563AE773}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63CE9D66-75CB-4AA0-82F3-B39F563AE773}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63CE9D66-75CB-4AA0-82F3-B39F563AE773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D259E2-6E6D-416A-BD29-D1C761C4F504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D259E2-6E6D-416A-BD29-D1C761C4F504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D259E2-6E6D-416A-BD29-D1C761C4F504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D259E2-6E6D-416A-BD29-D1C761C4F504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FBD6189D-F9B9-401B-A2AB-EF39AF5A9C25}
+		SolutionGuid = {F88EA627-A510-4AD7-876D-37285C3001E9}
 	EndGlobalSection
 EndGlobal
