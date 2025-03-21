@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WebApplication3.Models.Guess>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuessedCoordinates)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CorrectNumbers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CorrectPositions)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuessedCoordinates)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorrectNumbers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorrectPositions)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.GuessId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.GuessId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.GuessId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

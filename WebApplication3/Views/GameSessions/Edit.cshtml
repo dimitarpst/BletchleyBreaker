@@ -1,0 +1,59 @@
+﻿@model WebApplication3.Models.GameSession
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>GameSession</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="GameSessionId" />
+            <div class="form-group">
+                <label asp-for="Player1Id" class="control-label"></label>
+                <input asp-for="Player1Id" class="form-control" />
+                <span asp-validation-for="Player1Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player2Id" class="control-label"></label>
+                <input asp-for="Player2Id" class="form-control" />
+                <span asp-validation-for="Player2Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TargetCoordinates" class="control-label"></label>
+                <input asp-for="TargetCoordinates" class="form-control" />
+                <span asp-validation-for="TargetCoordinates" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrentPlayerId" class="control-label"></label>
+                <input asp-for="CurrentPlayerId" class="form-control" />
+                <span asp-validation-for="CurrentPlayerId" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsGameOver" /> @Html.DisplayNameFor(model => model.IsGameOver)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttemptsLeft" class="control-label"></label>
+                <input asp-for="AttemptsLeft" class="form-control" />
+                <span asp-validation-for="AttemptsLeft" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
